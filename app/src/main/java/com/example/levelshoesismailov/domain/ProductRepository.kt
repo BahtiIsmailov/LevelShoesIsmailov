@@ -4,7 +4,7 @@ import com.example.levelshoesismailov.data.api.ApiService
 import com.example.levelshoesismailov.data.api.ProductResponse
 import javax.inject.Inject
 
-class ProductInteractor @Inject constructor(
+class ProductRepository @Inject constructor(
     private val apiService: ApiService
 ) {
 

@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class WIshListInteractor @Inject constructor(
+class WIshListRepository @Inject constructor(
     private val favoriteProductDao: FavoriteProductDao
 ) {
 

@@ -2,8 +2,8 @@ package com.example.levelshoesismailov.di
 
 import com.example.levelshoesismailov.data.api.ApiService
 import com.example.levelshoesismailov.data.localDB.FavoriteProductDao
-import com.example.levelshoesismailov.domain.ProductInteractor
-import com.example.levelshoesismailov.domain.WIshListInteractor
+import com.example.levelshoesismailov.domain.ProductRepository
+import com.example.levelshoesismailov.domain.WIshListRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,17 +12,17 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object InteractorModule {
+object RepositoryModule {
 
     @Provides
     @Singleton
-    fun provideWishListInteractor(favoriteProductDao: FavoriteProductDao): WIshListInteractor {
-        return WIshListInteractor(favoriteProductDao)
+    fun provideWishListRepository(favoriteProductDao: FavoriteProductDao): WIshListRepository {
+        return WIshListRepository(favoriteProductDao)
     }
 
     @Provides
     @Singleton
-    fun provideProductInteractor(apiService: ApiService): ProductInteractor {
-        return ProductInteractor(apiService)
+    fun provideProductRepository(apiService: ApiService): ProductRepository {
+        return ProductRepository(apiService)
     }
 }
