@@ -9,18 +9,18 @@ import com.example.levelshoesismailov.data.api.Image
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.levelshoesismailov.data.api.Product
 import com.example.levelshoesismailov.presentation.ProductViewModel
 import com.example.levelshoesismailov.presentation.ui.ProductDetailScreen
 import com.example.levelshoesismailov.presentation.ui.ProductScreen
 import com.example.levelshoesismailov.presentation.ui.WishListScreen
+import org.koin.androidx.compose.koinViewModel
 
 @SuppressLint("StateFlowValueCalledInComposition")
 @Composable
 fun NavigationComponent(
     navController: NavHostController,
-    productViewModel: ProductViewModel = hiltViewModel()
+    productViewModel: ProductViewModel = koinViewModel()
 ) {
     NavHost(
         navController = navController,

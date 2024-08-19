@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
-//    alias(libs.plugins.dagger.hilt)
 }
 
 android {
@@ -63,14 +62,14 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.json)
     implementation(libs.androidx.lifecycle.viewModel)
-    implementation(libs.androidx.hilt)
     implementation(libs.androidx.room)
     implementation(libs.androidx.room.runtime)
     kapt(libs.androidx.room.compiler)
     implementation(libs.flow.row)
 
-//    implementation()
-//    kapt ()
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose) // если используете Compose
+    implementation(libs.koin.core)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

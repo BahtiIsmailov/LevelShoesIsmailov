@@ -2,9 +2,8 @@ package com.example.levelshoesismailov.domain
 
 import com.example.levelshoesismailov.data.api.ApiService
 import com.example.levelshoesismailov.data.api.ProductResponse
-import javax.inject.Inject
 
-class ProductRepository @Inject constructor(
+class ProductRepository(
     private val apiService: ApiService
 ) {
 

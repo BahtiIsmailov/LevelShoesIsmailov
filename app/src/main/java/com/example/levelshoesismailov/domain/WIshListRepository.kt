@@ -5,9 +5,8 @@ import com.example.levelshoesismailov.data.localDB.FavoriteProduct
 import com.example.levelshoesismailov.data.localDB.FavoriteProductDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
 
-class WIshListRepository @Inject constructor(
+class WIshListRepository(
     private val favoriteProductDao: FavoriteProductDao
 ) {
 

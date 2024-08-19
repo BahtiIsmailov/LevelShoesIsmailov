@@ -10,14 +10,11 @@ import com.example.levelshoesismailov.data.api.ProductResponse
 import com.example.levelshoesismailov.data.localDB.FavoriteProduct
 import com.example.levelshoesismailov.domain.ProductRepository
 import com.example.levelshoesismailov.domain.WIshListRepository
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class ProductViewModel @Inject constructor(
+class ProductViewModel(
     private val wIshListRepository: WIshListRepository,
     private val productRepository: ProductRepository,
 ) : ViewModel() {
