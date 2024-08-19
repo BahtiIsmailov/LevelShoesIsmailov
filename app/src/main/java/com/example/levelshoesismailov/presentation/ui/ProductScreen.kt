@@ -57,7 +57,7 @@ fun ProductScreen(
 @Composable
 fun ProductGrid(isFavorite: (String) -> Boolean, products: List<Product>, onProductClick: (String) -> Unit, onWishlistToggle: (Product) -> Unit) {
     LazyVerticalGrid(
-        columns = GridCells.Fixed(2), // Два столбца в сетке
+        columns = GridCells.Fixed(2),
         modifier = Modifier.padding(horizontal = 8.dp),
         contentPadding = PaddingValues(8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),

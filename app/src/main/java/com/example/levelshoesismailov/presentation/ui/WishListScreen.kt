@@ -45,7 +45,7 @@ fun WishListScreen(
             TopAppBar(
                 title = { Text("WISHLIST (${favoriteProducts.size})") },
                 actions = {
-                    IconButton(onClick = { navController.popBackStack() }) { // Handle close button
+                    IconButton(onClick = { navController.popBackStack() }) {
                         Icon(Icons.Default.Close, contentDescription = "Close")
                     }
                 }

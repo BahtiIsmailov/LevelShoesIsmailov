@@ -68,7 +68,7 @@ dependencies {
     implementation(libs.flow.row)
 
     implementation(libs.koin.android)
-    implementation(libs.koin.androidx.compose) // если используете Compose
+    implementation(libs.koin.androidx.compose)
     implementation(libs.koin.core)
 
     testImplementation(libs.junit)

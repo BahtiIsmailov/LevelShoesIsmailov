@@ -91,7 +91,6 @@ fun ProductDetailScreen(
             }
         }
 
-        // Product Image
         Image(
             painter = rememberImagePainter(data = product.image?.url),
             contentDescription = null,
@@ -101,7 +100,6 @@ fun ProductDetailScreen(
             contentScale = ContentScale.Crop
         )
 
-        // Product Information
         Column(
             modifier = Modifier
                 .fillMaxWidth()
