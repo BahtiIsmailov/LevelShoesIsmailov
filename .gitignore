@@ -1,15 +1,39 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Ignore Android Studio specific files
+.idea/
+.gradle/
 local.properties
+*.iml
+
+# Ignore build output directories
+/build/
+/app/build/
+
+# Ignore Gradle Wrapper files
+/gradle/
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Ignore Java class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore APKs
+*.apk
+*.ap_
+
+# Ignore IntelliJ IDEA files
+*.iws
+*.ipr
+*.idea/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore environment variable files
+*.env
+
+# Ignore other OS-specific files
+Thumbs.db
+desktop.ini
