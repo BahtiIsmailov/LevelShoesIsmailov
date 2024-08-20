@@ -24,7 +24,7 @@ LevelShoesIsmailov is an Android application that showcases products with an abi
 - **data**: Contains data-related classes such as models and network API definitions.
   - `api`: Contains API service interfaces and models for network communication.
   - `local`: Contains Room database and DAO interfaces.
-- **di**: Contains Hilt modules for dependency injection.
+- **di**: Contains Coin modules for dependency injection.
 - **presentation**: Contains ViewModels and UI Composables for the presentation layer.
   - `ui`: Contains Composable functions for the app's UI screens.
   - `navigation`: Contains the navigation graph.
