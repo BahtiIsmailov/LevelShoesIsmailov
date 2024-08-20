@@ -13,7 +13,7 @@ LevelShoesIsmailov is an Android application that showcases products with an abi
 
 - **Kotlin**: Programming language.
 - **Jetpack Compose**: Modern UI toolkit for building native Android UI.
-- **Hilt**: Dependency injection library for Android.
+- **Coin**: Dependency injection library for Android.
 - **Retrofit**: Type-safe HTTP client for making network requests.
 - **Room**: Persistence library to manage SQLite database.
 - **Navigation Component**: For managing app navigation within a single activity.
